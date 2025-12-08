@@ -662,6 +662,24 @@ endpoints:
       summaryModel: "deepseek-chat"
       modelDisplayLabel: "DeepSeek"
 
+    # deepseek-special
+    # https://platform.deepseek.com/api_keys
+    # Model list: https://platform.deepseek.com/api-docs/pricing
+    - name: "deepseek-special"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com/v3.2_speciale_expires_on_20251215"
+      models:
+        default:
+          - deepseek-chat
+          - deepseek-reasoner
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      summarize: false
+      summaryModel: "deepseek-chat"
+      modelDisplayLabel: "DeepSeek"
+
+
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
