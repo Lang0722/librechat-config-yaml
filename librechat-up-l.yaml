@@ -2196,9 +2196,11 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+
+      
     - name: "mycc"
       apiKey: "user_provided"
-      baseURL: "https://c.xyzchar.xyz"
+      baseURL: "https://c.xyzchar.xyz/v1"
       models:
         default:
           - claude-opus-4-6
