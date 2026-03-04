@@ -19,27 +19,6 @@ registration:
     - "openid"
 
 endpoints:
-  anthropic:
-      apiKey: "user_provided"
-      baseURL: "https://c.xyzchar.xyz"
-      models:
-        default:
-          - claude-opus-4-6
-          - claude-sonnet-4-6
-          - claude-haiku-4-5-20251001
-          - claude-opus-4-20250514
-          - claude-sonnet-4-20250514
-          - claude-3-7-sonnet-20250219
-          - claude-3-5-sonnet-20241022
-          - claude-3-5-sonnet-20240620
-          - claude-3-5-haiku-20241022
-          - claude-3-opus-20240229
-          - claude-3-sonnet-20240229
-          - claude-3-haiku-20240307
-        fetch: false
-      titleConvo: true
-      titleModel: "claude-haiku-4-5-20251001"
-      modelDisplayLabel: "Anthropic"
   custom:
     # APIpie
     # https://apipie.ai/dashboard/
@@ -2217,3 +2196,24 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
+    - name: "mycc"
+      apiKey: "user_provided"
+      baseURL: "https://c.xyzchar.xyz"
+      models:
+        default:
+          - claude-opus-4-6
+          - claude-sonnet-4-6
+          - claude-haiku-4-5-20251001
+          - claude-opus-4-20250514
+          - claude-sonnet-4-20250514
+          - claude-3-7-sonnet-20250219
+          - claude-3-5-sonnet-20241022
+          - claude-3-5-sonnet-20240620
+          - claude-3-5-haiku-20241022
+          - claude-3-opus-20240229
+          - claude-3-sonnet-20240229
+          - claude-3-haiku-20240307
+        fetch: false
+      titleConvo: true
+      titleModel: "claude-haiku-4-5-20251001"
+      modelDisplayLabel: "Anthropic"
